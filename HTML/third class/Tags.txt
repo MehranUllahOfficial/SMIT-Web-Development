@@ -1,0 +1,9 @@
+Bold b
+Italic i
+Horizontal line hr (Self Closing)
+Line Break br (SC)
+Semantic Elements (Use for SEO Purpose:
+	Strong strong 
+	Emphasize em
+Block Quote blockquote (Block Level Element): Use for reference
+Quote b (Inline element)

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links in CSS</title>
+    <style>
+        /* Links: Have 3 states */
+        /* link, visited, actives */
+        /* Defult link color: Blue */
+        /* Defult visited color: Purple like.*/
+        /* Defult active color: Red */
+        .linkedin:link{
+            color: skyblue;
+        }
+        .linkedin:active{
+            color: yellow;
+        }
+        .facebook:active{
+            color: yellow;
+        }
+        .linkedin:hover{
+            box-shadow: 1px 1px 5px;
+            /* box-shadow: -1px -1px 5px; */
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" class="google" target="_blank">Google</a>
+    <a href="https://www.facebook.com" class="facebook" target="_blank">Facebook</a>
+    <a href="https://www.linkedin.com" class="linkedin" target="_blank">linkedin.</a>
+</body>
+</html>

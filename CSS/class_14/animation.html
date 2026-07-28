@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 1px solid;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes bounce {
+        /* 0% {}
+        25% {}
+        50% {}
+        75% {}
+        100% {} */
+        from {
+            transform: translateY(0px);
+            border-radius: 0%;
+        }
+        to {
+            transform: translateY(530px);
+            border-radius: 50%;
+        }
+    }
+</style>
+<body>
+    <div class="container"></div>    
+</body>
+</html>

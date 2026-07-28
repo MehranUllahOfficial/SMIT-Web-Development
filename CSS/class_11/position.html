@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .section {
+            width: 500px;
+            height: 500px;
+            border: 1px solid;
+        }
+        .section_1 {
+            background-color: aqua;
+        }
+        .section_2 {
+            background-color: black;
+            /* position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px; */
+        }
+        .section_3 {
+            background-color: blue;
+            /* position: absolute;
+            left: 100px;
+            top: 10px; */
+        }
+        .section_4 {
+            background-color: rebeccapurple;
+        }
+        .section_5 {
+            background-color: yellow;
+        }
+        ul {
+            background-color: lightcoral;
+            position: sticky;
+            top: 0px;
+        }
+        ul>li {
+            display: inline-block;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section_1 section"></div>
+    <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+    </ul>
+    <div class="section_2 section"></div>
+    <div class="section_3 section"></div>
+    <div class="section_4 section"></div>
+    <div class="section_5 section"></div>
+</body>
+</html>

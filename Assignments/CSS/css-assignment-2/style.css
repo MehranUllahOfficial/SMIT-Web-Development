@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cat-item {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cat-icon {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.banner {
+    background-color: #e94560;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 20px 30px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.sales-table {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 20px;
+}
+
+.sales-table h2 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: #e94560;
+    font-weight: bold;
+}
+
+.description {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+.description h2 {
+    color: #1a1a2e;
+    margin-top: 0;
+}
+
+.festival-sales {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+.festival-sales h3 {
+    color: #1a1a2e;
+    margin-top: 0;
+}
+
+.festival-sales ul {
+    padding-left: 25px;
+}
+
+.festival-sales li {
+    padding: 5px 0;
+}
+
+.payment-options {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+.payment-options h3 {
+    color: #1a1a2e;
+    margin-top: 0;
+}
+
+.payment-options ul {
+    padding-left: 25px;
+}
+
+.payment-options li {
+    padding: 5px 0;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}

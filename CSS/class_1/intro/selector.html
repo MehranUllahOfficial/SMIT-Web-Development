@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<style>
+    /* Universal Selector */
+    /* * {
+        color: red;
+    } */
+    /* Type Selector */
+    /* h2 {
+        color: blue;
+    } */
+    /* Class Selector */
+    /* .para {
+        color: black;
+    } */
+    /* Adjacent Sibling Slector */
+    div + form {
+        color: blue;
+    }
+    /* Adjacent Sibling Slector */
+    div ~ p {
+        color: green;
+    }
+</style>
+<body>
+    <div>
+        <p class="para" id="paraID">Lorem ipsum dolor sit.</p>
+        <div>
+            <h2>Lorem.</h2>
+        </div>
+    </div>
+    <form action="">
+        <label class="lab">Name</label>
+        <br>
+        <input type="text">
+    </form>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dicta voluptatem fugiat cupiditate dolor maxime ad fuga nesciunt consectetur eos!</p>
+</body>
+</html>

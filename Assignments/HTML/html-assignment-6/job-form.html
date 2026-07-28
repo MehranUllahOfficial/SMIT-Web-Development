@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">Full Name</label> <br>
+            <input type="text" name="Name" id="fname" required><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" name="email" id="email" required placeholder="abc@gmail.com"><br>
+            <label for="pnumber">Phone Number</label><br>
+            <input type="text" name="number" id="pnumber" required><br>
+            <label for="portfolio">Website or Portfolio</label><br>
+            <input type="url" name="portfolio" id="portfolio"><br>
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Job Details</legend>
+            <label for="position">Job Position</label>
+            <select name="job-position" id="position">
+                <option value="">Select a position</option>
+                <option value="Frontend-Developer">Frontend Developer</option>
+                <option value="Backend-Developer">Backend Developer</option>
+                <option value="UI/UX-Designer">UI/UX Designer</option>
+                <option value="QA-Engineer">QA Engineer</option>
+            </select> <br> <br>
+
+            <label for="work-location">Preferred Work Location</label> <br>
+            <input type="radio" name="Preferred Work Location" id="on-site" value="on-site required">
+            <label for="on-site">On-Site</label> <br>
+            <input type="radio" name="Preferred Work Location" id="remote" value="remote" required>
+            <label for="remote">Remote</label> <br>
+            <input type="radio" name="Preferred Work Location" id="hybrid" value="hybrid" required>
+            <label for="hybrid">Hybrid</label> <br> <br>
+
+            <label for="">Skills</label> <br>
+            <input type="checkbox" name="skills" id="skill1" value="HTML" required>
+            <label for="skill1">HTML</label><br>
+            <input type="checkbox" name="skills" id="skill2" value="CSS" required>
+            <label for="skill2">CSS</label><br>
+            <input type="checkbox" name="skills" id="skill3" value="JavaScript" required>
+            <label for="skill3">JavaScript</label><br>
+            <input type="checkbox" name="skills" id="skill4" value="React" required>
+            <label for="skill4">React</label> <br>
+            <input type="checkbox" name="skills" id="skill5" value="Node.js" required>
+            <label for="skill5">Node.js</label> <br> <br>
+
+            <label for="resume">Resume Upload</label>
+            <input type="file" name="resume" id="resume" required> <br> <br>
+
+            <label for="about">About Yourself</label> <br>
+            <textarea name="about-yourself" id="about" rows="5" cols="30">
+            </textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Extra Section</legend>
+            <label for="search">Search Your Fav tech Stack</label>
+            <input type="search" name="search" id="search">
+            <button>Search</button> <br>
+            
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="password"> <br>
+            <label for="Cpassword">Confirm Password</label> <br>
+            <input type="password" name="password" id="Cpassword"> <br> <br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+/* Border */
+/* .container { */
+    /* border-width: 5px; */
+    /* border-style: dashed;
+    border-color: blue; */
+    /* border: 5px dashed blue ; */
+    /* border-top: 5px dashed blue ;
+    border-left: 5px dashed blue ;
+    border-right: 5px dashed blue ;
+    border-bottom: 5px dashed blue ; */
+
+/* } */
+
+/* p {
+    border: none;
+} */
+
+/* Padding */
+.container {
+    border: 2px solid blue;
+    /* padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px 20px; */
+    /* border-radius: 20px; */
+
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px 0px 20px 0px;
+
+    /* margin: 10px; */
+    /* margin: 10px 20px 10px 20px; */
+    margin: 10px 20px;
+} 
+
+.circle {
+    border: 2px solid skyblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.responsive {
+    border: 1px solid;
+    height: 300px;
+    max-width: 500px;
+    min-width: 200px;
+}

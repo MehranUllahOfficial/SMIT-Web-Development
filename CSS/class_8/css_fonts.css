@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.para{
+            font-size: 20px;
+            color: blue;
+            /* font-family: 'Courier New', Courier, monospace;Remaining fonts other than 1st called Following values */
+            font-family: "Playfair Display";
+            font-weight: 300;
+            /* font-style: italic; */
+        }
