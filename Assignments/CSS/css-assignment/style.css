@@ -6,7 +6,7 @@ body{
     width: 100%;
     height: 500px;
     opacity:0.9;
-    /* background-image: url(../css-assignment-1/images/logo.png);
+    /* background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -17,7 +17,7 @@ body{
     no-repeat
     fixed
     center center
-    url("../css-assignment-1/images/logo.png");
+    url("../css-assignment/images/logo.png");
 
     background-size: contain;
 }
