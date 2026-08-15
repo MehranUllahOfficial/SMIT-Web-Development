@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e50914;
+  --black: #000;
+  --gray: #b3b3b3;
+  --faq: #2d2d2d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  position: relative;
+  min-height: 610px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.34) 0%, rgba(0,0,0,.48) 48%, #000 100%),
+    url("images/her-banner.jpeg") center top / cover no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: -36px;
+  height: 72px;
+  border-top: 3px solid #ed197d;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 -14px 45px rgba(49, 64, 255, .32);
+  transform: rotate(-1deg);
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+  padding-top: 18px;
+}
+
+.netflix-logo {
+  color: var(--red);
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.btn-netflix {
+  color: #fff;
+  background: var(--red);
+  border: 1px solid var(--red);
+  font-weight: 700;
+}
+
+.btn-netflix:hover,
+.btn-netflix:focus {
+  color: #fff;
+  background: #f6121d;
+  border-color: #f6121d;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  min-height: 535px;
+  padding-top: 120px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 0 auto 16px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.price-text {
+  margin-bottom: 22px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.small-text {
+  margin-bottom: 10px;
+  font-size: .95rem;
+}
+
+.signup-form {
+  display: flex;
+  gap: 8px;
+  width: min(600px, 100%);
+}
+
+.signup-form .form-control {
+  min-height: 56px;
+  color: #fff;
+  background: rgba(16,16,16,.88);
+  border: 1px solid #777;
+  border-radius: 3px;
+}
+
+.signup-form .form-control::placeholder {
+  color: #b8b8b8;
+}
+
+.signup-form .btn {
+  min-width: 145px;
+}
+
+.section-space {
+  padding: 34px 0;
+}
+
+.section-title {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.trending-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.poster {
+  position: relative;
+  min-width: 0;
+  padding-left: 22px;
+}
+
+.poster img {
+  width: 100%;
+  height: 235px;
+  display: block;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.45);
+}
+
+.poster-number {
+  position: absolute;
+  z-index: 2;
+  left: -4px;
+  bottom: -7px;
+  color: #000;
+  font-size: clamp(4rem, 7vw, 6rem);
+  line-height: .8;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.reason-card {
+  min-height: 205px;
+  height: 100%;
+  padding: 20px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #161335, #1c102a);
+}
+
+.reason-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.reason-card p {
+  margin: 0;
+  color: #c9c6d4;
+  font-size: .88rem;
+  line-height: 1.4;
+}
+
+.feature-icon {
+  align-self: flex-end;
+  color: #ff4f9a;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(255,50,140,.6);
+}
+
+.faq-section {
+  padding-top: 40px;
+}
+
+.faq-list details {
+  margin-bottom: 6px;
+  background: var(--faq);
+}
+
+.faq-list summary {
+  position: relative;
+  padding: 17px 55px 17px 18px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.05rem;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.faq-list details[open] summary::after {
+  content: "×";
+}
+
+.faq-list details p {
+  margin: 0;
+  padding: 16px 18px;
+  background: #242424;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.bottom-signup {
+  padding: 40px 0 50px;
+}
+
+.bottom-signup p {
+  margin-bottom: 12px;
+  font-size: .9rem;
+}
+
+.site-footer {
+  padding: 30px 0 55px;
+  color: var(--gray);
+  font-size: .8rem;
+}
+
+.site-footer a {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--gray);
+  text-decoration: underline;
+}
+
+.contact-text {
+  margin-bottom: 28px;
+}
+
+.footer-links {
+  margin-bottom: 24px;
+  row-gap: 8px;
+}
+
+.country-label {
+  margin-bottom: 20px;
+}
+
+.site-footer small {
+  color: #777;
+}
+
+@media (max-width: 992px) {
+  .trending-wrapper {
+    grid-template-columns: repeat(5, 155px);
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .poster img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 570px;
+  }
+
+  .hero-content {
+    min-height: 500px;
+    padding-top: 100px;
+  }
+
+  .netflix-logo {
+    font-size: 25px;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .signup-form .form-control,
+  .signup-form .btn {
+    width: 100%;
+  }
+
+  .signup-form .btn {
+    min-height: 52px;
+  }
+
+  .reason-card {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .section-space {
+    padding: 26px 0;
+  }
+
+  .faq-list summary {
+    font-size: .95rem;
+  }
+
+  .footer-links {
+    row-gap: 14px;
+  }
+}
