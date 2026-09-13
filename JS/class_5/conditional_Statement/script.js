@@ -42,7 +42,7 @@ switch (condition)
 
 // console.log("Hi");
 
-let marks = Number(prompt("Enter your marks"));
+let marks = Number(prompt("Enter your marks out of 100"));
 
 if(marks > 89 && marks < 101) {
     document.write("You got grade A")

@@ -30,7 +30,7 @@ body {
 }
 
 .hero::after {
-  content: "";
+  content: ""; 
   position: absolute;
   left: -5%;
   right: -5%;
