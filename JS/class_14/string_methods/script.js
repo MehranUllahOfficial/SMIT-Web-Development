@@ -22,3 +22,4 @@ let rev_arr_word = arr_word.reverse();
 console.log(arr_word);
 let rev_str_word = rev_arr_word.join("");
 console.log(rev_str_word);
+
