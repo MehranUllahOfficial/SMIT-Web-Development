@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #menuIcon {
+            display: none;
+            cursor: pointer;
+            font-size: 28px;
+            padding: 10px;
+        }
+        .links a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            #menuIcon {
+                display: block;
+            }
+
+            .links {
+                display: none;
+            }
+
+            .links a {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="menuIcon">&#9776;</div>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Servies</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        let icon = document.getElementById("menuIcon");
+        let link = document.querySelector(".links");
+        
+        icon.addEventListener("click", function() {
+            if (link.style.display === "block") {
+                link.style.display = "none";
+            } else {
+                link.style.display = "block";
+            }
+        })
+    </script>
+</body>
+</html>

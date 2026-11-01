@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Form</title>
+    <script async src="script.js"></script>
+</head>
+<body>
+    <form action="" id="studentForm">
+        <label for="">Username</label>
+        <input type="text" id="username">
+        <br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <label for="">Select Languages</label>
+        <input type="checkbox" name="languages" value="English">English
+        <input type="checkbox" name="languages" value="Urdu">Urdu
+        <input type="checkbox" name="languages" value="Pushto">Pushto
+        <input type="checkbox" name="languages" value="Arabic">Arabic
+        <br>
+        <select name="country" id="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Iran">Iran</option>
+        </select>
+        <br>
+        <button id="btn">Show result</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
